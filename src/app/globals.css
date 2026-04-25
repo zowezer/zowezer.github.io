@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-marcellus: var(--font-marcellus);
+  --font-figtree: var(--font-figtree);
+
+  /* Atelier Botanical Palette (OkLCH) */
+  --color-silk-olive: oklch(20% 0.04 110);
+  --color-silk-leaf: oklch(40% 0.06 110);
+  
+  --color-gold-thread: oklch(80% 0.10 85);
+  --color-gold-leaf: oklch(75% 0.12 85);
+  
+  --color-linen-50: oklch(99.6% 0.004 95);
+  --color-linen-100: oklch(98% 0.01 95);
+  --color-linen-200: oklch(95% 0.02 95);
+  
+  --color-silk-pearl: oklch(99.5% 0.005 85);
+  --color-ancient-olive: oklch(18% 0.04 110);
+  --color-burnished-gold: oklch(75% 0.12 85);
+  --color-earthen-sage: oklch(45% 0.06 110);
+
+  /* VALENTINE MODE TOKENS */
+  --color-red-deep: oklch(35% 0.15 20);
+  --color-red-crimson: oklch(45% 0.20 25);
+  --color-red-gold: oklch(75% 0.15 35);
+  --color-red-blush: oklch(96% 0.03 15);
+  --color-valentine-rose: oklch(60% 0.15 20);
+
+  /* BLUE MODE TOKENS (Sapphire Essence) */
+  --color-blue-deep: oklch(25% 0.06 250);
+  --color-blue-sapphire: oklch(35% 0.10 250);
+  --color-blue-silver: oklch(75% 0.02 250);
+  --color-blue-ice: oklch(97% 0.01 240);
+
+  --animate-reveal-draw: reveal-draw 3.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-silk-float: silk-float 15s ease-in-out infinite;
+  --animate-elite-float: elite-float 15s ease-in-out infinite;
+
+  @keyframes reveal-draw {
+    from { stroke-dashoffset: 200; opacity: 0; }
+    to { stroke-dashoffset: 0; opacity: 0.12; }
+  }
+
+  @keyframes silk-float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(12px, -18px) rotate(0.8deg); }
+  }
+
+  @keyframes elite-float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(15px, -25px) rotate(1deg); }
+  }
+}
+
+:root {
+  --background: var(--color-linen-50); 
+  --foreground: var(--color-ancient-olive);
+}
+
+.red-mode {
+  --background: var(--color-red-blush);
+  --foreground: var(--color-red-deep);
+  --color-linen-50: var(--color-red-blush);
+  --color-linen-100: oklch(93% 0.05 15);
+  --color-silk-olive: var(--color-red-crimson);
+  --color-ancient-olive: var(--color-red-deep);
+  --color-gold-leaf: var(--color-red-gold);
+  --color-gold-thread: oklch(70% 0.10 30);
+  --color-silk-leaf: var(--color-valentine-rose);
+}
+
+.blue-mode {
+  --background: var(--color-blue-ice);
+  --foreground: var(--color-blue-deep);
+  --color-linen-50: var(--color-blue-ice);
+  --color-linen-100: oklch(94% 0.02 240);
+  --color-silk-olive: var(--color-blue-sapphire);
+  --color-ancient-olive: var(--color-blue-deep);
+  --color-gold-leaf: var(--color-blue-silver);
+  --color-gold-thread: oklch(75% 0.03 240);
+  --color-silk-leaf: oklch(50% 0.08 250);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 1.2s cubic-bezier(0.16, 1, 0.3, 1), color 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* MICRO-CANVAS TEXTURE */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  opacity: 0.035;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+h1, h2, h3 {
+  font-family: var(--font-marcellus);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 0.85;
+}
+
+p {
+  font-family: var(--font-figtree);
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  color: inherit;
+}
+
+/* Custom Scrollbar for Luxury Components */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-gold-thread);
+  opacity: 0.3;
+}
+
+::selection {
+  background-color: var(--color-gold-leaf);
+  color: var(--color-linen-50);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

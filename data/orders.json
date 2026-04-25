@@ -1,0 +1,191 @@
+[
+  {
+    "customer": {
+      "email": "m.zowezer@gmail.com",
+      "name": "Mohamad Zowezer",
+      "address": "Eriksfältsgatan 101, 215 50 Malmö, Sverige"
+    },
+    "items": [
+      {
+        "id": 1,
+        "name": "Olive Signature",
+        "price": 119,
+        "priceString": "119 kr",
+        "image": "/images/olive.png",
+        "quantity": 1,
+        "theme": "#1a2421"
+      },
+      {
+        "id": 2,
+        "name": "Cinnamon Ritual",
+        "price": 149,
+        "priceString": "149 kr",
+        "image": "/images/cinnamon.jpeg",
+        "quantity": 1,
+        "theme": "#5d4037"
+      }
+    ],
+    "total": 268,
+    "paymentMethod": "Mock Card",
+    "id": "ORD-1776912104957",
+    "createdAt": "2026-04-23T02:41:44.957Z",
+    "status": "retur",
+    "history": [
+      {
+        "status": "skickad",
+        "date": "2026-04-23T02:50:15.854Z",
+        "note": "Status uppdaterad till skickad"
+      },
+      {
+        "status": "levererad",
+        "date": "2026-04-23T02:50:22.128Z",
+        "note": "Status uppdaterad till levererad"
+      },
+      {
+        "status": "pending",
+        "date": "2026-04-23T02:50:40.704Z",
+        "note": "Status uppdaterad till pending"
+      },
+      {
+        "status": "levererad",
+        "date": "2026-04-23T02:50:50.458Z",
+        "note": "Status uppdaterad till levererad"
+      },
+      {
+        "status": "skickad",
+        "date": "2026-04-23T02:57:21.802Z",
+        "note": "Status uppdaterad till skickad"
+      },
+      {
+        "status": "levererad",
+        "date": "2026-04-23T02:57:29.660Z",
+        "note": "Status uppdaterad till levererad"
+      },
+      {
+        "status": "retur",
+        "date": "2026-04-23T02:57:35.585Z",
+        "note": "Status uppdaterad till retur"
+      }
+    ]
+  },
+  {
+    "customer": {
+      "email": "m.zowezer@gmail.com",
+      "name": "Haitham zowezer",
+      "address": "kronetorpsgatan 86A, 21227 MALMÖ, Sverige"
+    },
+    "items": [
+      {
+        "id": 4,
+        "name": "Rose Heritage",
+        "price": 159,
+        "priceString": "159 kr",
+        "image": "/images/rose.jpeg",
+        "quantity": 1,
+        "theme": "#a36d7d"
+      }
+    ],
+    "total": 159,
+    "paymentMethod": "Mock Card",
+    "id": "ORD-1776913176660",
+    "createdAt": "2026-04-23T02:59:36.660Z",
+    "status": "pending",
+    "history": [
+      {
+        "status": "pending",
+        "date": "2026-04-23T02:59:36.660Z",
+        "note": "Order placed by customer"
+      }
+    ]
+  },
+  {
+    "customer": {
+      "email": "",
+      "name": " ",
+      "address": ",  , Sverige"
+    },
+    "items": [
+      {
+        "id": 1,
+        "name": "Olive Signature",
+        "price": 119,
+        "priceString": "119 kr",
+        "image": "/images/olive.png",
+        "quantity": 1,
+        "theme": "#1a2421"
+      }
+    ],
+    "total": 119,
+    "paymentMethod": "Mock Card",
+    "id": "ORD-1776913195773",
+    "createdAt": "2026-04-23T02:59:55.773Z",
+    "status": "pending",
+    "history": [
+      {
+        "status": "pending",
+        "date": "2026-04-23T02:59:55.773Z",
+        "note": "Order placed by customer"
+      }
+    ]
+  },
+  {
+    "customer": {
+      "email": "",
+      "name": " ",
+      "address": ",  , Sverige"
+    },
+    "items": [
+      {
+        "id": 1,
+        "name": "Olive Signature",
+        "price": 119,
+        "priceString": "119 kr",
+        "image": "/images/olive.png",
+        "quantity": 1,
+        "theme": "#1a2421"
+      }
+    ],
+    "total": 119,
+    "paymentMethod": "Mock Card",
+    "id": "ORD-1776913212067",
+    "createdAt": "2026-04-23T03:00:12.067Z",
+    "status": "pending",
+    "history": [
+      {
+        "status": "pending",
+        "date": "2026-04-23T03:00:12.067Z",
+        "note": "Order placed by customer"
+      }
+    ]
+  },
+  {
+    "customer": {
+      "email": "mo0222zo-s@student.lu.se",
+      "name": "Mohamad Zowezer",
+      "address": "Eriksfältsgatan 101, 215 50 Malmö, Sverige"
+    },
+    "items": [
+      {
+        "id": 2,
+        "name": "Cinnamon Ritual",
+        "price": 149,
+        "priceString": "149 kr",
+        "image": "/images/cinnamon.jpeg",
+        "quantity": 1,
+        "theme": "#5d4037"
+      }
+    ],
+    "total": 149,
+    "paymentMethod": "Mock Card",
+    "id": "ORD-1777150207940",
+    "createdAt": "2026-04-25T20:50:07.940Z",
+    "status": "pending",
+    "history": [
+      {
+        "status": "pending",
+        "date": "2026-04-25T20:50:07.940Z",
+        "note": "Order placed by customer"
+      }
+    ]
+  }
+]
